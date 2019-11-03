@@ -1,0 +1,149 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../../img/lottaBacon.png");
+    background-size: 30%;
+    background-repeat: repeat-y;
+    background-position-y: center;
+    background-position-x: right;
+    background-color: #fff;
+}
+
+.social-links li {
+    list-style-type: none;
+}
+
+a {
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    transition: 0.3s;
+    text-shadow: #ffeaa7 2px -1px 1px;
+}
+
+.social-links li:nth-last-of-type(1) {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    padding-top: 2%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    background: none;
+    color: firebrick;
+    font-family: 'Pattaya', sans-serif;
+    font-size: 28px;
+}
+
+.logo {
+    width: 225px;
+    grid-column: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+
+header ul {
+    display: grid;
+    grid-template-columns: 75px 75px;
+    grid-template: 1fr 1fr;
+    grid-column: 3/4;
+    grid-gap: none;
+    align-content: flex-end;
+    margin: auto;
+}
+
+header li a {
+    font-size: 50px;
+    justify-self: space-around;
+    align-self: center;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    color: black;
+}
+
+header li a:hover {
+    transform: scale(1.25);
+    transition: 0.5s;
+    color: firebrick;
+}
+
+header h1 {
+    grid-column: 2/3;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+hr {
+    width: 95%;
+    border-radius: 20px;
+    filter: blur(1px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto auto 3% auto;
+}
+
+h2 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 28px;
+    align-self: center;
+}
+
+article {
+    width: 50%;
+    line-height: 25px;
+    font-family: 'Rancho', cursive;
+    font-size: 22px;
+    align-self: center;
+}
+
+article img {
+    width: 300px;
+    margin: 1%;
+}
+
+.floatLeft {
+    float: left;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.floatRight {
+    float: right;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    img, article {
+        transform: scale(0.75);
+    }
+
+    img {
+        justify-self: center;
+    }
+
+    article {
+        margin-top: -20%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

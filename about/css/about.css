@@ -4,18 +4,28 @@ body, html {
 }
 
 body {
-    background-image: url("../img/baconHeart.png");
-    background-repeat: no-repeat;
-    background-size: 120%;
-    background-position: center;
-    background-color: white;
+    background-image: url("../../img/lottaBacon.png");
+    background-size: 30%;
+    background-repeat: repeat-y;
+    background-position-y: center;
+    background-position-x: right;
+    background-color: #fff;
 }
 
 .social-links li {
     list-style-type: none;
 }
 
-.social-links li:nth-last-of-type(1) {
+a {
+    font-family: 'Rancho', cursive;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    transition: 0.3s;
+    text-shadow: #ffeaa7 2px -1px 1px;
+}
+
+.social-links li:nth-of-type(1) {
     text-align: center;
     width: 100%;
     margin: auto;
@@ -49,7 +59,7 @@ header ul {
     margin: auto;
 }
 
-header li a i{
+header li a {
     font-size: 50px;
     justify-self: space-around;
     align-self: center;
@@ -58,7 +68,7 @@ header li a i{
     color: black;
 }
 
-header li a i:hover {
+header li a:hover {
     transform: scale(1.25);
     transition: 0.5s;
     color: firebrick;
@@ -71,10 +81,6 @@ header h1 {
     justify-self: center;
 }
 
-header img {
-    grid-column: 1/2;
-}
-
 hr {
     width: 95%;
     border-radius: 20px;
@@ -84,82 +90,65 @@ hr {
 .page-container {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 70%;
+    width: 50%;
     padding: 2%;
 }
 
-.articles-container {
+.team {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    border: 5px solid rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    padding: 1%;
-    margin-top: 5%;
-    background: none;
 }
 
-p {
-    width: 60%;
-    align-self: center;
-    color: #ffeaa7;
-    font-size: 24px;
-    font-weight: bolder;
-    text-shadow: black 2px -1px 1px;
-    font-family: 'Rancho', cursive;
-}
-
-.about, .articles {
-    border: 5px solid rgba(0, 0, 0, .2);
-    border-radius: 10px;
+.team div {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
 }
 
-.articles {
-    width: 30%;
-    padding: 1%;
+.team img {
+    border-radius: 50%;
+    width: 200px;
+    margin-right: 20px;
 }
 
-.about h4, .articles h4, a {
+.team img:nth-of-type(1) {
+    background-color: white;
+}
+
+label {
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+}
+
+h3, h2 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 28px;
+}
+
+label, p {
     font-family: 'Rancho', cursive;
-    text-align: center;
-    font-size: 30px;
-    color: black;
-    transition: 0.3s;
-    text-shadow: #ffeaa7 2px -1px 1px;
-}
-
-h4:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
-}
-
-footer {
-    height: 50px;
-    filter: blur(2px);
-    width: 100%;
-    background: transparent;
+    font-size: 22px;
 }
 
 @media (max-width: 768px) {
-    img, article {
-        transform: scale(0.5);
+    h2, img, article {
+        transform: scale(0.8);
     }
 
     h1 {
         font-size: 24px;
     }
 
-    i {
-        font-size: 20px;
-        grid-gap: none;
-        grid-column: 2/3;
-        margin: none;
-    }
-
     h2 {
         text-align: center;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: auto;
     }
 }
