@@ -9,7 +9,6 @@ body {
     background-repeat: repeat-y;
     background-position-y: center;
     background-position-x: right;
-    background-color: #fff;
 }
 
 .social-links li {
@@ -57,21 +56,6 @@ header ul {
     grid-gap: none;
     align-content: flex-end;
     margin: auto;
-}
-
-header li a {
-    font-size: 50px;
-    justify-self: space-around;
-    align-self: center;
-    margin-bottom: 15px;
-    transition: 0.5s;
-    color: black;
-}
-
-header li a:hover {
-    transform: scale(1.25);
-    transition: 0.5s;
-    color: firebrick;
 }
 
 header h1 {
